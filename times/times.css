@@ -1,0 +1,97 @@
+*{
+
+}
+body{
+  background-color: #B02B5B;  
+  margin:  0;
+  padding:  0;
+}
+#menu{
+  display: flex;
+  flex-direction: row;
+  background-color: purple;
+}
+#menu .Menu-item{
+
+}
+
+#pagina-times{
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#grupo-times{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer{
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  width: 100%;
+  height: 10vh;    
+  text-align:center;  
+}
+footer ul{
+
+    color: white;
+    list-style: none;
+}
+
+
+
+
+
+.time-card {
+    margin: 10px;
+    padding: 0;
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+}
+
+.time-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+
+.time-card:hover .time-card-inner {
+    transform: rotateY(180deg);
+}
+
+.time-card-front, .time-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.time-card-front {
+
+    color: black;
+}
+
+
+.time-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
